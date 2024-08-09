@@ -218,6 +218,258 @@ build a working prototype of a percussive scoop for Axel.},
   venue   = {Nature},
 }
 
+@Article{Jimenez2019,
+  author = {E. Jimenez and C. Sandu},
+  title  = {Towards a real-time pneumatic tire performance prediction using an advanced tire-ice interface model},
+  year   = {2019},
+  doi    = {10.1016/J.JTERRA.2018.04.004},
+  url    = {https://www.semanticscholar.org/paper/e467e5ce3fb5159ad91212d29fa1bfe14413b592},
+  venue  = {Journal of terramechanics},
+}
+
+@Article{He2016,
+  author   = {Rui He and E. Jimenez and D. Savitski and C. Sandu and V. Ivanov},
+  title    = {Investigating the Parameterization of Dugoff Tire Model Using Experimental Tire-Ice Data},
+  year     = {2016},
+  abstract = {Tire modeling plays an important role in the development of an Active Vehicle Safety System. As part of a larger project that aims at developing an integrated chassis control system, this study investigates the performance of a 19” all-season tire on ice for a sport utility vehicle. A design of experiment has been formulated to quantify the effect of operational parameters, specifically: wheel slip, normal load, and inflation pressure on the tire tractive performance. The experimental work was conducted on the Terramechanics Rig in the Advanced Vehicle Dynamics Laboratory at Virginia Tech. The paper investigates an approach for the parameterization of the Dugoff tire model based on the experimental data collected. Compared to other models, this model is attractive in terms of its simplicity, low number of parameters, and easy implementation for real-time applications. The relations correlating tire forces with slip ratios were identified by applying zero-phase filtering techniques to the raw test data. Next, an optimization procedure was utilized to extract parameters for the Dugoff tire model from the tire-on-ice drawbar pull coefficient versus slip ratio at certain levels of normal load and inflation tire pressure. CITATION: He, R., Jimenez, E., Savitski, D., Sandu, C. et al., "Investigating the Parameterization of Dugoff Tire Model Using Experimental Tire-Ice Data," SAE Int. J. Passeng. Cars Mech. Syst. 10(1):2017, doi:10.4271/2016-01-8039. Published 09/27/2016 Copyright © 2016 SAE International doi:10.4271/2016-01-8039 saepcmech.saejournals.org 83 © SA E I nt rn tio na l these models. The tire testing machine drum is probably the most common indoor testing machine utilized by the tire industry. Shimizu coated the machine drum in ice so that the variation of the lateral friction coefficient with the slip angle and of the longitudinal friction coefficient with the slip ratio could be tested [8]. Using the same testing facility, Shimizu also explored the effect of various ice textures on the friction coefficient versus slip ratio relation [9]. The influence of operational parameters such as normal load, inflation pressure, toe angle, tread depth, and camber angle on the normalized drawbar pull (named the drawbar pull coefficient) was studied by Bhoopalam via indoor testing of a 16” SRTT tire on ice on the Terramechanics Rig at the Advanced Vehicle Dynamics Laboratory (AVDL) at Virginia Tech [10]. Outdoor tests using the same tire mounted on a truck were also performed to investigate the traction force on ice [11, 12]; it has been noted in this study that a direct benchmarking between the indoor and the outdoor tests results was not possible due to multiple reasons, among which: impossibility to control some of the operational parameters in the outdoor tests, while they were controlled in the indoor tests (e.g., ice temperature and normal load); accurate control of the slip ratio (indoor tests have been performed for very precise slip ratios); vehicle speed (indoor tests can only be performed at low speed). For the parameterization of a tire model it is important to characterize the dynamic performance of the physical tire first. The complexity of the parameterization process, the associated cost, as well as time needed, increase with the number of tire model parameters. The parameterization processes of three popular tire models: Dugoff tire model, Magic Formula tire model, and FTire model, are briefly discussed here. Dugoff tire model, with a low number of parameters and acceptable accuracy of predicting longitudinal and later forces, is quite popular for applications involving vehicle control system design [5, 6, 7]. The parameters of Dugoff tire model have physical meanings, and the parameterization could be completed by referring to typical physical values [5] or by using regression techniques to extract longitudinal stiffness and corner stiffness from the tire testing data. Furthermore, the Dugoff tire model is relatively computationally inexpensive, making it a great candidate for real-time simulations or hardware/ software in-the-loop simulations. The Magic Formula tire model [13] has more parameters than the Dugoff tire model, and its parameters don’t have physical meanings. Optimization of the tire testing data is needed for the parameterization of the Magic Formula. The main optimization method applied to parameterize the Magic Formula, developed by TNO, uses an optimization technique to fit the Magic Formula parameters using the Matlab toolbox [14]. This method requires starting values of the parameters at the beginning of the optimization. Proper starting values of parameters are not easily accessible for combined a slip condition, for example [14, 15]. Therefore, for this case, the global minimum might not be reached, and, as a consequence, suitable parameters of the Magic Tire model may not necessarily be obtained using this method. An alternative optimization method based on genetic algorithms could avoid the unfavorable scenario resulted from improper starting values for combined slip condition, as this method doesn’t need any starting values to launch the optimization [14]. Compared with the aforementioned two tire models, FTire has a large number of tire design, physical, and modal parameters. Because of this fact, the parameterization process is more complex, including: cleat tests, modal tests, simulations of a Finite Element (FE) model, and optimization techniques. Furthermore, tire design data sheets and simple measurements [16] are also used. Three packages, FTire/calc, FTire/fit, and FTire/estimate, assist users in parameterizing the FTire after the modal test and cleat test are done for an initial and partial parameterization [17]. FTire/calc performs simulations of FE model to partially validate the initial parameterization and to provide a first FTire input file to FTire/fit. FTire/fit tunes the parameters of FTire and does the optimization to minimize the least-squares distance of cleat test measurements and the simulation result of the FTire model on a cleat. Finally, FTire/estimate utilizes the well-validated tire data file and extrapolation techniques to tweak the modal and stiffness parameters of FTire. As part of the project Innovative Engineering of Ground Vehicles with Integrated Active Chassis Systems (“Project EVE”), funded by the European Union Horizon 2020 Framework Program [18], this study conducted testing of a 235/55R-19 all-season tire on ice at Virginia Tech for various combinations of tire pressure, normal load, and slip ratio. The relationship between the drawbar pull coefficient and the slip ratio was extracted from the testing data; the results were further used to study the influence of the design of experiment parameters on the traction efforts of studied tire on ice. By applying a genetic algorithm (GA), the drawbar pull coefficient vs. slip ratio relations obtained from the tire-on-ice testing data are then used to parameterize a Dugoff model for the 19” all-season tire. This tire has been selected since it is the tire selected to be used in the EVE projects. The Dugoff model has been selected due to its relatively small number of parameters required and due to its suitability for real-time simulations. The tire model is intended to be used next for real-time tire inflation pressure control, one of the sub-system control strategies of the integrated chassis control for ground vehicles with off-road ability being developed under the Project EVE. The paper has the following structure. Section 2 summarizes the key aspects of the indoor tire-ice testing at AVDL used to collect tire-ice data in this study. Next, observations regarding the testing and the presentation of the processed testing data are included in Section 3. Analysis of the testing data has been done in Section 4, discussing aspects of the effects of the inflation pressure and of the normal load on the traction performance of the tire on ice. Section 5 contains the description of the Dugoff tire model and its parameterization method. The paper ends with conclusions on the work conducted, presented in Section 6. He et al / SAE Int. J. Passeng. Cars Mech. Syst. / Volume 10, Issue 1 (April 2017) 84 © SA E I nt rna t o l},
+  doi      = {10.4271/2016-01-8039},
+  groups   = {Terramechanics},
+  url      = {https://www.semanticscholar.org/paper/ca2b568eaa09a50f6820438d6e28b31ef7805aef},
+}
+
+@Article{Holley2010,
+  author   = {Troy Nigel Holley},
+  title    = {Empirical Analysis of Pneumatic Tire Friction on Ice},
+  year     = {2010},
+  abstract = {Pneumatic tire friction on ice is an under-researched area of tire mechanics. This study covers the design and analysis of a series of pneumatic tire tests on a flat-level ice road surface. The terramechanics rig of the Advanced Vehicle Dynamics Lab (AVDL) is a single-wheel test rig that allows for the experimental analysis of the forces and moments on a tire, providing directly the data for the drawbar pull of said tire, thus supporting the calculation of friction based on this data. This indoor testing apparatus allows for some degree of replication by helping to maintain test conditions and by imposing a desired tire slip; the normal load, camber angle, toe angle, and other testing configurations can also be pre-set, as required. Methods of and issues related to controlling the production of ice and maintaining the conditions of numerous factors for each trial run were also documented. The AVDL terramechanics rig allowed for the collection of data from tests that varied the tire tread, tire inflation pressure, normal load on the wheel, and the slip ratio of the moving tire. This empirical data was then analyzed through the statistical analysis program JMP 8 in order to determine which factors (or combination of factors) significantly influence pneumatic tire friction on ice. The analysis verified that the slip ratio had a significant effect on the observed coefficient of friction, which decreased as the slip ratio increased. The combinations of the slip ratio and inflation pressure and the slip ratio and tire setup also had a significant effect on the observed coefficient of friction. The tests appear to have validated the theory that the drawbar pull and the traction was higher for the tire with tread.},
+  groups   = {Terramechanics},
+  url      = {https://www.semanticscholar.org/paper/8db58c880259db57a5af7d192c86e547db3ca3ee},
+}
+
+@Article{Watanabe2023,
+  author = {Yutaro Watanabe and Shingo Nakano and Hirotaka Suzuki and S. Ozaki},
+  title  = {Numerical analysis of wheel locomotion on soft soil using the extended terramechanics model based on cellular automata},
+  year   = {2023},
+  doi    = {10.1016/j.jterra.2023.05.005},
+  groups = {Terramechanics},
+  url    = {https://www.semanticscholar.org/paper/c82e847e72d4880eaca3064005ecb163374d6b25},
+  venue  = {Journal of terramechanics},
+}
+
+@Article{Wasfy2021,
+  author = {T. Wasfy and P. Jayakumar},
+  title  = {Next-generation NATO reference mobility model complex terramechanics – Part 1: Definition and literature review},
+  year   = {2021},
+  doi    = {10.1016/J.JTERRA.2021.02.002},
+  groups = {Terramechanics},
+  url    = {https://www.semanticscholar.org/paper/f87b052798e9c7e53271d02aef6a8f4a85e0328b},
+  venue  = {Journal of terramechanics},
+}
+
+@Article{Villanueva2023,
+  author   = {G. Villanueva and H. B. Hammel and S. N. Milam and S. Faggi and V. Kofman and L. Roth and K. Hand and L. Paganini and J. Stansberry and J. Spencer and S. Protopapa and G. Strazzulla and G. Cruz-Mermy and C. Glein and R. Cartwright and G. Liuzzi},
+  title    = {Endogenous CO2 ice mixture on the surface of Europa and no detection of plume activity},
+  year     = {2023},
+  abstract = {Jupiter’s moon Europa has a subsurface ocean beneath an icy crust. Conditions within the ocean are unknown, and it is unclear whether it is connected to the surface. We observed Europa with the James Webb Space Telescope (JWST) to search for active release of material by probing its surface and atmosphere. A search for plumes yielded no detection of water, carbon monoxide, methanol, ethane, or methane fluorescence emissions. Four spectral features of carbon dioxide (CO2) ice were detected; their spectral shapes and distribution across Europa’s surface indicate that the CO2 is mixed with other compounds and concentrated in Tara Regio. The 13CO2 absorption is consistent with an isotopic ratio of 12C/13C = 83 ± 19. We interpret these observations as indicating that carbon is sourced from within Europa. Description Editor’s summary Europa, an icy moon of Jupiter, has a subsurface ocean beneath a crust of water ice. Solid carbon dioxide (CO2) has previously been observed on its surface, but the source was unknown. Two teams analyzed infrared spectroscopy of Europa from the James Webb Space Telescope to investigate the CO2 source. Trumbo and Brown found that the CO2 is concentrated in a region with geology that indicates transport of material to the surface from within the moon, and they discuss the implications for the composition of Europa’s internal ocean. Villanueva et al. also identified an internal origin of the CO2 and measured its 12C/13C isotope ratio. They searched for plumes of volatile material breaching the surface but found a lower activity than earlier observations. Together, these studies demonstrate that there is a source of carbon within Europa, probably in its ocean. —Keith T. Smith Spectroscopy of carbon dioxide ice on Jupiter’s moon Europa indicates an internal origin and determines the carbon isotope ratio.},
+  doi      = {10.1126/science.adg4270},
+  groups   = {Icy Moons},
+  pmid     = {37733858},
+  url      = {https://www.semanticscholar.org/paper/7f4510b14adbb9f9028448c1027879ce5462e45f},
+  venue    = {Science},
+}
+
+@Article{Hand2022,
+  author   = {K. Hand and C. Phillips and A. Murray and J. Garvin and E. Maize and R. Gibbs and G. Reeves and A. S. Martin and G. Tan-Wang and J. Krajewski and K. Hurst and R. Crum and B. Kennedy and T. Mcelrath and J. Gallon and D. Sabahi and S. Thurman and B. Goldstein and P. Estabrook and S. W. Lee and J. Dooley and W. Brinckerhoff and K. Edgett and C. German and T. Hoehler and S. Hörst and J. Lunine and C. Paranicas and K. Nealson and D. E. Smith and A. Templeton and M. Russell and B. Schmidt and B. Christner and B. Ehlmann and A. Hayes and A. Rhoden and P. Willis and R. Yingst and K. Craft and M. Cameron and T. Nordheim and J. Pitesky and J. Scully and J. Hofgartner and S. Sell and K. Barltrop and J. Izraelevitz and E. Brandon and J. Seong and J.-P. Jones and J. Pasalic and K. Billings and J. Ruiz and R. Bugga and D. Graham and L. Arenas and D. Takeyama and M. Drummond and H. Aghazarian and A. Andersen and K. B. Andersen and E. Anderson and A. Babuscia and P. Backes and E. Bailey and D. Balentine and C. Ballard and D. Berisford and P. Bhandari and K. Blackwood and G. Bolotin and E. Bovre and J. Bowkett and K. Boykins and M. Bramble and T. Brice and P. Briggs and A. Brinkman and S. Brooks and B. Buffington and B. Burns and M. Cable and S. Campagnola and L. Cangahuala and G. Carr and J. Casani and N. Chahat and B. Chamberlain-Simon and Y. Cheng and S. Chien and B. Cook and M. Cooper and M. DiNicola and B. Clement and Z. Dean and E. Cullimore and A. Curtis and Jean de la Croix and P. D. Pasquale and E. Dodd and L. Dubord and J. Edlund and R. Ellyin and B. Emanuel and J. T. Foster and A. Ganino and G. J. Garner and M. T. Gibson and M. Gildner and K. Glazebrook and M. E. Greco and W. Green and S. Hatch and M. Hetzel and W. Hoey and A. Hofmann and R. Ionasescu and Anshul Jain and J. Jasper and J. Johannesen and G. Johnson and I. Jun and A. Katake and S. Y. Kim-Castet and D. Kim and W. Kim and E. Klonicki and B. Kobeissi and B. Kobie and J. Kochocki and M. Kokorowski and J. Kosberg and K. Kriechbaum and T. Kulkarni and R. Lam and D. Landau and M. E. Lattimore and S. Laubach and C. Lawler and G. Lim and J. Lin and T. Litwin and M. Lo and C. Logan and E. Maghasoudi and L. Mandrake and Y. Marchetti and E. Marteau and K. Maxwell and J. M. Namee and O. Mcintyre and M. Meacham and J. Melko and J. Mueller and D. Muliere and A. Mysore and J. Nash and H. Ono and J. M. Parker and R. C. Perkins and A. Petropoulos and A. Gaut and M. Gómez and R. Casillas and M. Preudhomme and G. Pyrzak and J. Rapinchuk and J. M. Ratliff and T. Ray and E. T. Roberts and K. Roffo and D. Roth and J. Russino and T. Schmidt and M. Schoppers and J. Senent and F. Serricchio and D. Sheldon and L. Shiraishi and J. Shirvanian and K. Siegel and G. Singh and A. Sirota and E. Skulsky and J. Stehly and N. Strange and S. Stevens and E. Sunada and S. Tepsuporn and L. Tosi and N. Trawny and I. Uchenik and V. Verma and R. A. Volpe and C. Wagner and D. Wang and R. Willson and J. L. Wolff and A. Wong and A. Zimmer and K. Sukhatme and K. A. Bago and Y. Chen and A. Deardorff and R. Kuch and C. Lim and M. Syvertson and G. Arakaki and A. Avila and K. DeBruin and A. Frick and J. R. Harris and M. Heverly and J. Kawata and S. Kim and D. Kipp and J. Murphy and M. W. Smith and M. Spaulding and R. Thakker and N. Warner and C. Yahnker and M. Young and T. Magner and D. Adams and P. Bedini and L. Mehr and C. Sheldon and S. Vernon and V. Bailey and M. Briére and M. Butler and A. Davis and S. Ensor and M. Gannon and A. Haapala-Chalk and T. Hartka and M. Holdridge and A. Hong and J. Hunt and J. Iskow and F. Kahler and K. Murray and D. Napolillo and M. Norkus and R. Pfisterer and J. Porter and D. Roth and P. Schwartz and L. Wolfarth and E. Cardiff and A. Davis and E. Grob and J. Adam and E. Betts and J. Norwood and M. Heller and T. Voskuilen and P. Sakievich and L. Gray and D. J. Hansen and K. Irick and J. Hewson and J. Lamb and S. C. Stacy and C. M. Brotherton and A. Tappan and D. Benally and H. Thigpen and E. Ortiz and D. Sandoval and A. Ison and M. Warren and P. Stromberg and P. Thelen and B. Blasy and P. Nandy and A. W. Haddad and L. Trujillo and T. Wiseley and S. Bell and N. P. Teske and C. Post and L. Torres-Castro and C. Grosso and M. Wasiolek},
+  title    = {Science Goals and Mission Architecture of the Europa Lander Mission Concept},
+  year     = {2022},
+  abstract = {Europa is a premier target for advancing both planetary science and astrobiology, as well as for opening a new window into the burgeoning field of comparative oceanography. The potentially habitable subsurface ocean of Europa may harbor life, and the globally young and comparatively thin ice shell of Europa may contain biosignatures that are readily accessible to a surface lander. Europa’s icy shell also offers the opportunity to study tectonics and geologic cycles across a range of mechanisms and compositions. Here we detail the goals and mission architecture of the Europa Lander mission concept, as developed from 2015 through 2020. The science was developed by the 2016 Europa Lander Science Definition Team (SDT), and the mission architecture was developed by the preproject engineering team, in close collaboration with the SDT. In 2017 and 2018, the mission concept passed its mission concept review and delta-mission concept review, respectively. Since that time, the preproject has been advancing the technologies, and developing the hardware and software, needed to retire risks associated with technology, science, cost, and schedule.},
+  doi      = {10.3847/PSJ/ac4493},
+  groups   = {Icy Moons},
+  url      = {https://www.semanticscholar.org/paper/25dc3f9d649e18d46a47c126611249f3655c3e47},
+  venue    = {The Planetary Science Journal},
+}
+
+@Article{Yang2024,
+  author = {Huaiguang Yang and Chu Zhang and L. Ding and Qingqing Wei and Haibo Gao and Guangjun Liu and Liyuan Ge and Zongquan Deng},
+  title  = {Comparative study of terramechanics properties of spherical and cylindrical feet for planetary legged robots on deformable terrain},
+  year   = {2024},
+  doi    = {10.1016/j.jterra.2024.100968},
+  groups = {Terramechanics,Leggy Robots},
+  url    = {https://www.semanticscholar.org/paper/3936a982aeb6691ae05efe067be540b3727bdf2d},
+  venue  = {Journal of terramechanics},
+}
+
+@Article{Karpman2024,
+  author = {Eric Karpman and J. Kövecses and M. Teichmann},
+  title  = {Semi-empirical terramechanics modelling of rough terrain represented by a height field},
+  year   = {2024},
+  doi    = {10.1016/j.jterra.2024.100975},
+  groups = {Terramechanics},
+  url    = {https://www.semanticscholar.org/paper/fb5e388188b10021bae9110a6e2946dcaaee963b},
+  venue  = {Journal of terramechanics},
+}
+
+@Article{MacKenzie2022,
+  author   = {S. MacKenzie and M. Neveu and A. Davila and J. Lunine and M. Cable and C. Phillips‐Lander and J. Eigenbrode and J. Waite and K. Craft and J. Hofgartner and C. P. McKay and C. Glein and Dana Burton and S. Kounaves and R. Mathies and S. Vance and M. Malaska and R. Gold and C. German and K. Soderlund and P. Willis and C. Freissinet and A. McEwen and J. Brucato and J. D. de Vera and T. Hoehler and J. Heldmann},
+  title    = {Science Objectives for Flagship-Class Mission Concepts for the Search for Evidence of Life at Enceladus},
+  year     = {2022},
+  abstract = {Cassini revealed that Saturn's Moon Enceladus hosts a subsurface ocean that meets the accepted criteria for habitability with bio-essential elements and compounds, liquid water, and energy sources available in the environment. Whether these conditions are sufficiently abundant and collocated to support life remains unknown and cannot be determined from Cassini data. However, thanks to the plume of oceanic material emanating from Enceladus’ south pole, a new mission to Enceladus could search for evidence of life without having to descend through kilometers of ice. In this article, we outline the science motivations for such a successor to Cassini, choosing the primary science goal to be determining whether Enceladus is inhabited and assuming a resource level equivalent to NASA's Flagship-class missions. We selected a set of potential biosignature measurements that are complementary and orthogonal to build a robust case for any life detection result. This result would be further informed by quantifications of the habitability of the environment through geochemical and geophysical investigations into the ocean and ice shell crust. This study demonstrates that Enceladus’ plume offers an unparalleled opportunity for in situ exploration of an Ocean World and that the planetary science and astrobiology community is well equipped to take full advantage of it in the coming decades.},
+  doi      = {10.1089/ast.2020.2425},
+  groups   = {Icy Moons},
+  pmid     = {35290745},
+  url      = {https://www.semanticscholar.org/paper/846aab09c14d9011a7ab91d4b0aea22c41e2f3d6},
+  venue    = {Astrobiology},
+}
+
+@Article{Hodoshima2016,
+  author   = {R. Hodoshima and Yoshikazu Ohura and Yuki Nishiyama and Akihiro Sakaki and Soichiro Watanabe and S. Kotosaka},
+  title    = {The ASURA I harvestman-like hexapod walking robot: compact body and long leg design},
+  year     = {2016},
+  abstract = {Graphical Abstract This paper reports the design of a new hexapod walking robot, ASURA I, inspired by the physical features of a harvestman’s behavior. ASURA I has a special mobile form with one compact body and much longer legs than conventional hexapod walking robots. This form enhances the walking performance of the robot on rocky or uneven terrain. Here, we present the design and analysis of the leg mechanism, body structure design, gait planning, and prototype development. The long legs (relative to the body) are managed by special parallel link mechanisms, which powerfully and effectively drive the leg joints. The leg mechanism is analyzed by its kinematics, singularity, and static characteristics. The leg length and weight of ASURA I is 1.3 m and 27 kg, respectively. The alternating tripod and wave gaits of ASURA I are successfully demonstrated in a series of walking experiments. Video abstract Read the transcript Watch the video on Vimeo},
+  doi      = {10.1080/01691864.2016.1246978},
+  groups   = {Leggy Robots},
+  url      = {https://www.semanticscholar.org/paper/163690468f33d30dbb549f01a7fee0a6d75a2e99},
+  venue    = {Adv. Robotics},
+}
+
+@Article{Cao2015,
+  author   = {Feng Cao and Chao Zhang and H. Y. Choo and Hirotaka Sato},
+  title    = {Insect-machine hybrid robot: Insect walking control by sequential electrical stimulation of leg muscles},
+  year     = {2015},
+  abstract = {This paper reports motion control of living insect legs by electrically stimulating multiple leg muscles under pre-programmed sequential schedule. A living beetle (Coleopteran, Mecynorrhina torquata) was employed as the insect platform. Firstly, we investigated the sequence of leg motions (walking gait) of free-walking beetles to preliminarily understand which motions (leg muscles) are being activated at which timings and for how long. Each beetle leg has three degrees of freedom (DoFs), namely protraction/retraction, levation/depression, and extension/flexion. We then anatomically mapped out and located the leg muscle groups corresponding to each DoF to determine the stimulation sites (electrode implantation sites) for activating our desired leg motions. Silver thin wires were implanted into the muscles and the other ends of the wires were connected to output sites controlled by a microcontroller which allows for the pre-programmed sequential electrical stimulation. Based on the leg motion sequence in the free walking beetles, two types of walking gaits control, namely tripod and galloping were successfully demonstrated. The step frequency, which corresponds to walking speed, is user-adjustable by changing the duration of each stimulation sequence.},
+  doi      = {10.1109/ICRA.2015.7139833},
+  groups   = {Leggy Robots,Spiders},
+  url      = {https://www.semanticscholar.org/paper/f4a1de79c6fb7fda86ecd3251b249904b93290a2},
+  venue    = {IEEE International Conference on Robotics and Automation},
+}
+
+@Article{Wang2023,
+  author   = {Jiong Wang and Ke Su and Rui Wang and Xunwei Wu},
+  title    = {Parameter design and simulation verification of leg hydraulic cylinder for quadruped robot},
+  year     = {2023},
+  abstract = {In order to realize the walking stability of quadruped robot in different road conditions and improve work efficiency, the parameters of leg hydraulic cylinder of quadruped robot are designed in this paper. According to the geometrical relation of the leg structure, the data relation between the Angle parameter and the length parameter of the hydraulic cylinder in each joint of the robot is obtained, and the stroke parameter of the hydraulic cylinder is calculated. Based on the joint simulation of ADAMS and MATLAB, the calculated hydraulic cylinder parameters are effectively verified through the simulation experiment of foot robot crossing the obstacle. The experimental results show that the hydraulic cylinder on the thigh of the quadruped robot has a larger thrust, while the hydraulic cylinder on the calf has a smaller thrust, but the maximum thrust value of the hydraulic cylinder in the same part is about the same. Therefore, when designing the hydraulic cylinder, the hydraulic cylinder on the thigh and the calf are designed to be the same size respectively, which can meet the stability of the four-legged robot walking in different road conditions.},
+  doi      = {10.1109/ICRAIC61978.2023.00071},
+  groups   = {Leggy Robots,Hydraulics},
+  url      = {https://www.semanticscholar.org/paper/1985569f9804c350f4e873216a85b0773bd1f532},
+  venue    = {2023 3rd International Conference on Robotics, Automation and Intelligent Control (ICRAIC)},
+}
+
+@Article{Gao2021,
+  author   = {Bing-Tuan Gao and Hao Guan and Wenming Tang and Wenlong Han and Shilong Xue},
+  title    = {Research on Position Recognition and Control Method of Single-leg Joint of Hydraulic Quadruped Robot},
+  year     = {2021},
+  abstract = {In order to obtain the precise mathematical model of the position control system of the
+hydraulic quadruped robot, and to meet the requirements of the system parameters in different stages of motion, this paper studies the position control system of the single-leg joint of the hydraulic
+quadruped robot: First of all, this paper uses the closed-loop indirect identification method to identify the position of the leg joints of the hydraulic quadruped robot to obtain the mathematical model
+of the system; And then, the speed PID control algorithm and speed planning algorithm are designed, so that the system can quickly respond to the changes of system input according to the requirements of different speeds; Finally, the joint position control system of the hydraulic quadruped
+robot is simulated and verified by experiments.
+
+
+
+ The mathematical model of the positioning system of the hydraulic quadruped robot is
+clear, but the parameters in the model have the characteristics of uncertainty and time-variation. In
+the joint position control system of a hydraulic quadruped robot, different motion stages have different requirements for system parameters.
+
+
+
+ The purpose of this study is to obtain the precise mathematical model of the position control system of the hydraulic quadruped robot and to meet the requirements of the system parameters
+in different stages of motion.
+
+
+
+ This research takes the hydraulic quadruped robot single-leg system as the research object
+and uses the closed-loop indirect identification method to identify the position of the leg joints of
+the hydraulic quadruped robot to obtain the mathematical model of the system. Then, the speed PID
+control method is designed and compared with the ordinary PID control by taking the positioning control accuracy of the robot before touching the ground as a standard to carry out the controlled trial.
+
+
+
+ In this research, the identification method and control algorithm are designed, and finally,
+the simulation and experimental research are carried out. The results of the simulation and experiment
+verify the correctness of the identification method and the effectiveness of the control algorithm.
+
+
+
+First of all, this paper uses the closed-loop indirect identification method to identify the
+position of the leg joints of the hydraulic quadruped robot to obtain the mathematical model of the
+system. Then, the speed PID control algorithm and speed planning algorithm are designed so that
+the system can quickly respond to the changes of system input according to the requirements of different speeds.},
+  doi      = {10.2174/2352096514666211027150816},
+  groups   = {Leggy Robots,Hydraulics},
+  url      = {https://www.semanticscholar.org/paper/dc9ae703aa8a870425b9af07100d576b3f9441c5},
+  venue    = {Recent Advances in Electrical & Electronic Engineering (Formerly Recent Patents on Electrical & Electronic Engineering)},
+}
+
+@Article{Hua2023,
+  author = {Zisen Hua and Zhao Zhang and Hui Chai and Yibin Li and Xianhua Li and Yaru Sun},
+  title  = {Energy efficiency onboard hydraulic power for quadruped robot based on high-low double pumps supply},
+  year   = {2023},
+  doi    = {10.1007/s12206-023-0838-2},
+  groups = {Leggy Robots,Hydraulics},
+  url    = {https://www.semanticscholar.org/paper/7d8b3c20d48de0d5cb5bb83ec71bc1b1f303236f},
+  venue  = {Journal of Mechanical Science and Technology},
+}
+
+@Article{Tani2020,
+  author = {Kosuke Tani and Hiroyuki Nabae and Yoshiharu Hirota and G. Endo and K. Suzumori},
+  title  = {Leg Trajectory Design for A Hydraulic Legged Robot Considering Pump Capacity},
+  year   = {2020},
+  doi    = {10.1299/jsmermd.2020.1p2-h02},
+  groups = {Leggy Robots,Hydraulics},
+  url    = {https://www.semanticscholar.org/paper/1fac9699a61b15293e93bde25b735281227b377a},
+}
+
+@Article{Zentner2013,
+  author = {L. Zentner},
+  title  = {Modelling and Application of the Hydraulic Spider Leg Mechanism},
+  year   = {2013},
+  doi    = {10.1007/978-3-642-33989-9_34},
+  groups = {Leggy Robots,Hydraulics,Spiders},
+  url    = {https://www.semanticscholar.org/paper/ed8fb883d4b1eae72eb67e08560898ddc138c84d},
+}
+
+@Article{Landkammer2014,
+  author   = {Stefan Landkammer and Rainer Valek and R. Hornfeck},
+  title    = {A Novel Bio-Inspired Fluidic Actuator for Robotic Applications},
+  year     = {2014},
+  abstract = {Biological research on the spider leg mechanism has inspired the development of a novel hinge joint actuator with an antagonistic fluid system. Current bio-inspired robot systems with fluidic muscles can provide a higher power density than conventional piston-cylinder assemblies with the same working pressure and diameter. But like conventional robot arms, current fluidic systems work with the same structural concept: stability is provided by a framework of beams and links while the actuators are placed upon it. A more efficient, lightweight principle can be found in spider legs. An exoskeletal architecture of stiff, tube-like limbs and flexible joint membranes comprise the primary structure, which is filled with hemolymph and muscles. The two most important joints of biological spider legs are extended hydraulically by an increase in fluidic pressure, whereas flexion is performed by the muscles. Recent data from biological studies show that this counterplay of hydraulic extension and muscular flexion is the source of spiders’ incomparably lightweight and powerful legs. Furthermore, the exoskeleton protects the sensitive acting parts and ensures functionality even in harsh conditions or environments. The presented fluidic joint actuator exemplifies the technical application of this unique system. A stiff exoskeleton, with an inflatable joint membrane is constantly filled with fluid pressure, which creates the default extension of the joints. In addition, a fluidic muscle, with a higher pressure, is integrated into this “low pressure domain” and connected to the limb. The muscle is filled to generate flexion. So the counterplay of passive “high cross-section–low pressure” extension and actively controlled “low cross-section–high differential pressure” flexion makes a novel, dynamic rotary actuation system possible. Moreover, balancing the two pressure levels allows individual, case-based adjustments and increases the energy efficiency of the system.},
+  groups   = {Leggy Robots,Hydraulics,Spiders},
+  url      = {https://www.semanticscholar.org/paper/dbc09ac5601d761d3f4fc9670dd86ae428a1243b},
+}
+
+@Article{Chen2021,
+  author   = {Siqing Chen and He Xu and Xueshan Zhou},
+  title    = {Bionic Water Hydraulic System of Soft Robot Control Inspired by Spider Limbs},
+  year     = {2021},
+  abstract = {Advancement in technology has seen to a rise in applications of soft robots and the demands for their control are also growing. At present, the pressure control system is bloated and slow to respond, which makes the continuous control of soft robot based on pressure-driven more difficult than that of the rigid. In nature, arthropods use the combination of fluid resistance in blood vessels and lymphatic vessels to achieve limbs bending, which provide inspirations for the control of soft robots. In this study, based on the spider limb control, six proportional solenoid valves are designed, each of which can be quickly connected with other valves to form the required hydraulic bridge. Based on theoretical analysis and computational fluid dynamics (CFD) simulation, the pressure control characteristics of type A, B, and C hydraulic Bridges are presented. Through experiments, the relationship between pressure and control current is found to verify the relevant features of the hydraulic system. Because of the good pressure control characteristics of the C-bridge, it is used to drive the soft robotic arm. The experimental results show that this water hydraulic system can control soft robots continuously.},
+  doi      = {10.1109/ROBIO54168.2021.9739632},
+  groups   = {Leggy Robots,Hydraulics,Spiders},
+  url      = {https://www.semanticscholar.org/paper/5f7e2a7d48057e359543ffaa607fa5ba0db6e381},
+  venue    = {IEEE International Conference on Robotics and Biomimetics},
+}
+
+@Article{Wang2021,
+  author   = {Shu Qi Wang and Jizhuang Fan and Kuan Zhang and Wei Zhang and Gangfeng Liu and Jie Zhao},
+  title    = {Simulation Study of a Spider-Like Robot Based on Leg Reorganization},
+  year     = {2021},
+  abstract = {This paper presents a four-legged bionic robot based on leg reorganization with the hunter spider as the bionic research object. By studying the biological structure of the hunter spider, its movement mode, and the characteristics of limb movement during the conversion process is analyzed and the principle of wheel and foot conversion of the robot is obtained. The three-dimensional model of the bionic robot is designed, and the overall assembly of the bionic structure model is completed. The rationality of the design of the bionic structure is initially verified by the leg reorganization. The virtual prototype is built by adding constraints to realize the bionic motion simulation, including in-situ rotary motion, foot-wheel conversion motion, wheel motion, wheel-foot conversion motion, foot motion, which provides a theoretical basis for the development of the physical prototype and the selection of hardware.},
+  doi      = {10.1109/RCAR52367.2021.9517527},
+  groups   = {Leggy Robots,Spiders},
+  url      = {https://www.semanticscholar.org/paper/a55b63b2781f458fd18eb6c3cf029981be2e876b},
+  venue    = {International Conference on Real-time Computing and Robotics},
+}
+
+@Article{Jain2019,
+  author   = {Rohan Jain},
+  title    = {Spider Robot - An Eight Leg Waking Robot},
+  year     = {2019},
+  abstract = {: This paper gives the methodology used & working details of an eight leg waking robot named as “SPY SPIDER”. It was named so because it walks like a spider and it used safely for spying purpose. It could be easily used where humans are unable to and gather information through camera mounted on it and send live recording too. It was a useful gadget for gathering information of enemies. The robot was wirelessly connected and controlled by remote control so that one can access the location of the robot at any time. The live updates of the location can also be checked on mobile phone and can be record the live streaming also. The robot was connected to IOT, which send the updates to robot also. The unique thing of this was that it can rotate 360 degree on its location. It can go on different terrains where the normal wheels can’t move which make it useful to it to any planet for gathering its environmental conditions.},
+  doi      = {10.22214/ijraset.2019.4287},
+  groups   = {Leggy Robots,Spiders},
+  url      = {https://www.semanticscholar.org/paper/6a2f36e91c20f72e5485466cd8511ec38f03fd3d},
+  venue    = {International Journal for Research in Applied Science and Engineering Technology},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -225,4 +477,7 @@ build a working prototype of a percussive scoop for Axel.},
 1 StaticGroup:Spiders\;0\;1\;\;\;\;;
 1 StaticGroup:Cryo\;0\;1\;\;\;\;;
 1 StaticGroup:Icy Moons\;0\;1\;\;\;\;;
+1 StaticGroup:Terramechanics\;0\;1\;\;\;\;;
+1 StaticGroup:Leggy Robots\;0\;1\;\;\;\;;
+1 StaticGroup:Hydraulics\;0\;1\;\;\;\;;
 }
